@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_notes_backg"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <Button
+        android:id="@+id/notes_discard"
+        android:layout_width="@dimen/close_button_dimen"
+        android:layout_height="@dimen/close_button_dimen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon_close"
+        android:padding="@dimen/all_margin" />
+    
+    
+        <ScrollView
+            android:id="@+id/notes_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical" >
+
+            <EditText
+                android:id="@+id/notes_edittxt"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:ems="10" >
+            </EditText>
+        </ScrollView>
+
+	<Button
+	    android:id="@+id/notes_add_to"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/notes_scroll"
+	    android:text="Add Selected to Notes" />
+
+	<Button
+	    android:id="@+id/notes_done"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/notes_scroll"
+	    android:text="Save!!!" />
+
+</RelativeLayout>

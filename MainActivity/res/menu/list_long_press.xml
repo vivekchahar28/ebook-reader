@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/share_text"
+        android:title="Share as text">
+    </item>
+    <item
+        android:id="@+id/share_attachment"
+        android:title="Share as attachment">
+    </item>
+    <item
+        android:id="@+id/delete_file"
+        android:title="Delete">
+    </item>
+
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   
+    <item
+        android:id="@+id/dictionary"
+        android:icon="@drawable/icon_dictionary"
+        android:onClick="onContextualMenuItemClicked"
+        android:showAsAction="ifRoom"
+        android:title="word meaning">
+    </item>
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/icon_notes"
+        android:onClick="onContextualMenuItemClicked"
+        android:showAsAction="ifRoom"
+        android:title="add to notes">
+    </item>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/icon_search"
+        android:onClick="onContextualMenuItemClicked"
+        android:showAsAction="ifRoom"
+        android:title="search">
+    </item>
+    <item
+        android:id="@+id/readloud"
+        android:icon="@drawable/icon_readloud"
+        android:onClick="onContextualMenuItemClicked"
+        android:showAsAction="ifRoom"
+        android:title="read loudly">
+    </item>
+
+</menu>

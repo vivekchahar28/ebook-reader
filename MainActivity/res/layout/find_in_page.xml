@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_margin="10dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    
+    >
+   
+    <EditText
+        android:id="@+id/query"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:ems="10" 
+        android:layout_weight="20">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:layout_weight="80" />
+
+</LinearLayout>

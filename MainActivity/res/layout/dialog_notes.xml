@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dialog_notes_backg"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/dialog_notes_close"
+            android:layout_width="@dimen/close_button_dimen"
+            android:layout_height="@dimen/close_button_dimen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_close"
+            android:padding="@dimen/all_margin" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical" >
+
+            <EditText
+                android:id="@+id/dialog_notes_edtext"
+                android:layout_width="fill_parent"
+                android:layout_height="307dp"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </ScrollView>
+    </RelativeLayout>

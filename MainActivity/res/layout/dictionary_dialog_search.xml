@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_notes_backg"
+    android:orientation="vertical"
+    android:padding="5dp" >
+ 
+    
+    
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/TEXT_STATUS_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearance" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bSearchOnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SCROLLER_ID"
+        android:layout_centerHorizontal="true"
+        android:text="Search On Web" 
+        android:gravity="center"
+        />
+
+</LinearLayout>
